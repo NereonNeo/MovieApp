@@ -1,0 +1,256 @@
+.fa-user,
+.fa-moon {
+    font-size: 30px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 25;
+    color: #fff;
+}
+
+.wrapp {
+    max-width: 100%;
+    max-height: 100%;
+    height: 84px;
+    padding-top: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.wrapp .logo {
+    cursor: pointer;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wrapp .logo_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wrapp .logo_desc {
+    padding-left: 10px;
+}
+
+.wrapp .logo_desc p {
+    font-weight: 800;
+    font-size: 25px;
+    color: #fff;
+}
+
+.wrapp .nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapp .nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wrapp .nav ul li {
+    padding-left: 55px;
+}
+
+.wrapp .nav ul li a:hover {
+    border-bottom: 2px solid #5e2ced;
+}
+
+.wrapp .loginbuttons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 19px;
+    cursor: pointer;
+}
+
+.wrapp .loginbuttons .login {
+    padding-right: 35px;
+}
+
+.wrapp .burgerMenu,
+.wrapp .Bmenu {
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 986px) {
+    .wrapp .nav,
+    .wrapp .loginbuttons {
+        display: none;
+    }
+    .wrapp .Bmenu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+.adaptiveMenu,
+.MobileadaptiveMenu {
+    z-index: 2;
+    display: none;
+    width: 100%;
+    height: 395px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #1a1a23;
+    position: absolute;
+    top: 10%;
+    left: -100%;
+    right: 0;
+}
+
+.adaptiveMenu .adaptiveMenuList,
+.MobileadaptiveMenu .adaptiveMenuList {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.adaptiveMenu .adaptiveMenuList .LoginAndMode,
+.MobileadaptiveMenu .adaptiveMenuList .LoginAndMode {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.adaptiveMenu .adaptiveMenuList .LoginAndMode .loginbuttons,
+.MobileadaptiveMenu .adaptiveMenuList .LoginAndMode .loginbuttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.adaptiveMenu .adaptiveMenuList .LoginAndMode .loginbuttons .button,
+.MobileadaptiveMenu .adaptiveMenuList .LoginAndMode .loginbuttons .button {
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 986px) {
+    .adaptiveMenu,
+    .MobileadaptiveMenu {
+        display: block;
+    }
+}
+
+.MobileadaptiveMenu {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+}
+
+.Bmenu {
+    margin: 0;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.Bmenu .line {
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    margin: 6px 0;
+    -webkit-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
+}
+
+.Bmenu:hover > .line:nth-of-type(1) {
+    width: 30px;
+}
+
+.Bmenu:hover > .line:nth-of-type(3) {
+    width: 30px;
+}
+
+/* .MuiInputLabel-animated {
+    color: #fff !important;
+}
+.MuiInput-underline::before {
+    border-bottom-color: #fff !important;
+} */
+
+.nav > ul > li {
+    white-space: nowrap;
+}
+.searchInput {
+    color: #1a1a23;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: none;
+    outline-color: #5e2ced;
+}

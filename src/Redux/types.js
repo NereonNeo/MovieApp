@@ -1,0 +1,6 @@
+export const GET_POPULAR = 'GET_POPULAR';
+export const GET_RATEDPOSTER = 'GET_RATEDPOSTER';
+export const GET_RATED = 'GET_RATED';
+export const GET_SEARCH_ANSWER = 'GET_SEARCH_ANSWER';
+export const SHOWLOADING = 'SHOWLOADING';
+export const HIDELOADING = 'HIDELOADING';

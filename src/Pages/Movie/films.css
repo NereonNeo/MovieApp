@@ -1,0 +1,47 @@
+.filmsContainer {
+    color: #fff;
+}
+.filmsContainer > button {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.imgContainer {
+    height: 500px;
+    width: 100%;
+}
+.imgContainer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.textTitle {
+    text-align: center;
+    padding: 44px 0px 44px 0px;
+}
+.textContainer {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tagContainer > .tag {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: 47px;
+    background-color: #0d0d12;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    margin: 10px 5px 10px 5px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 34px;
+}
+.MuiButton-root {
+    background-color: #5e2ced !important;
+}
