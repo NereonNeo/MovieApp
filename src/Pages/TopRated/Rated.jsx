@@ -4,16 +4,17 @@ import PaginationComponent from '../../Components/Pagination/Pagination';
 import { getRated } from '../../Redux/actions/appAction';
 
 const Rated = () => {
-    const state = useSelector((state) => state.app.topRated);
+  const state = useSelector((state) => state.app.topRated);
+  console.log(state);
+  return (
+    <div className="MainCardsContainer">
+      {state.map((element) => {
+        return <Cards content={element} key={element.id} />;
+      })}
 
-    return (
-        <div className="MainCardsContainer">
-            {state.map((element) => {
-                return <Cards content={element} key={element.id} />;
-            })}
-            <PaginationComponent dispatchFunc={getRated} />
-        </div>
-    );
+      <PaginationComponent dispatchFunc={getRated} />
+    </div>
+  );
 };
 
 export default Rated;
